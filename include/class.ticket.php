@@ -3240,6 +3240,8 @@ implements RestrictedAccess, Threadable, Searchable {
                 $recipients[]=$manager;
             }
 
+            // TODO: Whole department?
+
             // Account manager
             if ($cfg->alertAcctManagerONNewMessage()
                     && ($org = $this->getOwner()->getOrganization())
